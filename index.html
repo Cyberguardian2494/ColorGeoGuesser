@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Color Geo-Guesser</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Color Geo-Guesser</h1>
+
+    <div class="game-area">
+      <div class="left-panel">
+        <div id="target-color" class="color-box"></div>
+        <p>Match this color by clicking on the color wheel</p>
+        <div id="preview-color" class="color-box small"></div>
+        <button id="select-btn">Select</button>
+        <div id="round-indicator">Round 1 of 3</div>
+      </div>
+
+      <div class="right-panel">
+        <canvas id="color-wheel" width="300" height="300"></canvas>
+      </div>
+    </div>
+
+    <div class="bottom-panel">
+      <div id="score">Score: 0</div>
+      <div class="buttons">
+        <button id="replay-btn">🔁</button>
+        <button id="quit-btn">❌</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
